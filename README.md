@@ -1,7 +1,7 @@
 # test coverage for  [webpack-dashboard (v0.3.0)](https://github.com/FormidableLabs/webpack-dashboard#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-webpack-dashboard.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-webpack-dashboard) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-webpack-dashboard.svg)](https://travis-ci.org/npmtest/node-npmtest-webpack-dashboard)
 #### a CLI dashboard for webpack dev server
 
-[![NPM](https://nodei.co/npm/webpack-dashboard.png?downloads=true)](https://www.npmjs.com/package/webpack-dashboard)
+[![NPM](https://nodei.co/npm/webpack-dashboard.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/webpack-dashboard)
 
 | git-branch : | [alpha](https://github.com/npmtest/node-npmtest-webpack-dashboard/tree/alpha)|
 |--:|:--|
@@ -9,11 +9,17 @@
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-webpack-dashboard/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-webpack-dashboard/build/test-report.html)|
 | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-webpack-dashboard/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-webpack-dashboard/tree/gh-pages/build)|
 
-[![istanbul-coverage](https://npmtest.github.io/node-npmtest-webpack-dashboard/build/screenCapture.buildCustomOrg.browser.coverage.html.png)](https://npmtest.github.io/node-npmtest-webpack-dashboard/build/coverage.html/index.html)
+- [https://npmtest.github.io/node-npmtest-webpack-dashboard/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-webpack-dashboard/build/coverage.html/index.html)
 
-[![test-report](https://npmtest.github.io/node-npmtest-webpack-dashboard/build/screenCapture.buildCustomOrg.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmtest%252Fnode-npmtest-webpack-dashboard%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-webpack-dashboard/build/test-report.html)
+[![istanbul-coverage](https://npmtest.github.io/node-npmtest-webpack-dashboard/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)](https://npmtest.github.io/node-npmtest-webpack-dashboard/build/coverage.html/index.html)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-webpack-dashboard/build/screenCapture.buildApidoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-webpack-dashboard%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-webpack-dashboard/build/apidoc.html)
+- [https://npmtest.github.io/node-npmtest-webpack-dashboard/build/test-report.html](https://npmtest.github.io/node-npmtest-webpack-dashboard/build/test-report.html)
+
+[![test-report](https://npmtest.github.io/node-npmtest-webpack-dashboard/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-webpack-dashboard/build/test-report.html)
+
+- [https://npmdoc.github.io/node-npmdoc-webpack-dashboard/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-webpack-dashboard/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-webpack-dashboard/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-webpack-dashboard/build/apidoc.html)
 
 ![npmPackageListing](https://npmtest.github.io/node-npmtest-webpack-dashboard/build/screenCapture.npmPackageListing.svg)
 
@@ -62,16 +68,13 @@
     "main": "index.js",
     "maintainers": [
         {
-            "name": "exogen",
-            "email": "exogen@gmail.com"
+            "name": "exogen"
         },
         {
-            "name": "stefvhuynh",
-            "email": "huynh.stefan@gmail.com"
+            "name": "stefvhuynh"
         },
         {
-            "name": "thekenwheeler",
-            "email": "ken_wheeler@me.com"
+            "name": "thekenwheeler"
         }
     ],
     "name": "webpack-dashboard",
@@ -79,7 +82,6 @@
     "peerDependencies": {
         "webpack": "*"
     },
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/FormidableLabs/webpack-dashboard.git"
