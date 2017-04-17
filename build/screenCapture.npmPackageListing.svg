@@ -1,21 +1,21 @@
 <svg height="286" width="720" xmlns="http://www.w3.org/2000/svg">
 <rect height="286" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
-<tspan x="10" y="26">  0.  2017-04-11 21:19:09 +0000    34309 bytes  .</tspan>
-<tspan x="10" y="42">  1.  2017-04-11 21:19:09 +0000      244 bytes  CHANGELOG.md</tspan>
-<tspan x="10" y="58">  2.  2017-04-11 21:19:09 +0000     3282 bytes  CONTRIBUTING.md</tspan>
-<tspan x="10" y="74">  3.  2017-04-11 21:19:09 +0000      872 bytes  ISSUE_TEMPLATE.md</tspan>
-<tspan x="10" y="90">  4.  2017-04-11 21:19:09 +0000     1065 bytes  LICENSE</tspan>
-<tspan x="10" y="106">  5.  2017-04-11 21:19:09 +0000     3301 bytes  README.md</tspan>
-<tspan x="10" y="122">  6.  2017-04-11 21:19:09 +0000     1992 bytes  bin/webpack-dashboard.js</tspan>
-<tspan x="10" y="138">  7.  2017-04-11 21:19:09 +0000     6629 bytes  dashboard/index.js</tspan>
-<tspan x="10" y="154">  8.  2017-04-11 21:19:09 +0000      610 bytes  docs/api.md</tspan>
-<tspan x="10" y="170">  9.  2017-04-11 21:19:09 +0000     4530 bytes  docs/getting-started.md</tspan>
-<tspan x="10" y="186"> 10.  2017-04-11 21:19:09 +0000       77 bytes  index.js</tspan>
-<tspan x="10" y="202"> 11.  2017-04-11 21:19:09 +0000     2860 bytes  package.json</tspan>
-<tspan x="10" y="218"> 12.  2017-04-11 21:19:09 +0000     2417 bytes  plugin/index.js</tspan>
-<tspan x="10" y="234"> 13.  2017-04-11 21:19:09 +0000      751 bytes  utils/format-assets.js</tspan>
-<tspan x="10" y="250"> 14.  2017-04-11 21:19:09 +0000     3853 bytes  utils/format-modules.js</tspan>
-<tspan x="10" y="266"> 15.  2017-04-11 21:19:09 +0000     1826 bytes  utils/format-output.js</tspan>
+<tspan x="10" y="26">  0.  2017-04-17 15:08:02 +0000    34309 bytes  .</tspan>
+<tspan x="10" y="42">  1.  2017-04-17 15:08:02 +0000      244 bytes  CHANGELOG.md</tspan>
+<tspan x="10" y="58">  2.  2017-04-17 15:08:02 +0000     3282 bytes  CONTRIBUTING.md</tspan>
+<tspan x="10" y="74">  3.  2017-04-17 15:08:02 +0000      872 bytes  ISSUE_TEMPLATE.md</tspan>
+<tspan x="10" y="90">  4.  2017-04-17 15:08:02 +0000     1065 bytes  LICENSE</tspan>
+<tspan x="10" y="106">  5.  2017-04-17 15:08:02 +0000     3301 bytes  README.md</tspan>
+<tspan x="10" y="122">  6.  2017-04-17 15:08:02 +0000     1992 bytes  bin/webpack-dashboard.js</tspan>
+<tspan x="10" y="138">  7.  2017-04-17 15:08:02 +0000     6629 bytes  dashboard/index.js</tspan>
+<tspan x="10" y="154">  8.  2017-04-17 15:08:02 +0000      610 bytes  docs/api.md</tspan>
+<tspan x="10" y="170">  9.  2017-04-17 15:08:02 +0000     4530 bytes  docs/getting-started.md</tspan>
+<tspan x="10" y="186"> 10.  2017-04-17 15:08:02 +0000       77 bytes  index.js</tspan>
+<tspan x="10" y="202"> 11.  2017-04-17 15:08:02 +0000     2860 bytes  package.json</tspan>
+<tspan x="10" y="218"> 12.  2017-04-17 15:08:02 +0000     2417 bytes  plugin/index.js</tspan>
+<tspan x="10" y="234"> 13.  2017-04-17 15:08:02 +0000      751 bytes  utils/format-assets.js</tspan>
+<tspan x="10" y="250"> 14.  2017-04-17 15:08:02 +0000     3853 bytes  utils/format-modules.js</tspan>
+<tspan x="10" y="266"> 15.  2017-04-17 15:08:02 +0000     1826 bytes  utils/format-output.js</tspan>
 </text>
 </svg>

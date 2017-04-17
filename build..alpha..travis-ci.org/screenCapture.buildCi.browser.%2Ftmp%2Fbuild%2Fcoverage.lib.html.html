@@ -1,7 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <title>Code coverage report for node-npmtest-webpack-dashboard/webpack-dashboard/dashboard/index.js</title>
+<html lang="en"><head>
+    <title>Code coverage report for node-npmtest-webpack-dashboard/node_modules/webpack-dashboard/dashboard/index.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -194,7 +192,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-webpack-dashboard">npmtest-webpack-dashboard (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-webpack-dashboard/webpack-dashboard/dashboard/index.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-webpack-dashboard/node_modules/webpack-dashboard/dashboard/index.js</span></h1>
     <h2>
         
         Statements: <span class="metric">14.86% <small>(11 / 74)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -210,11 +208,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-webpack-dashboard/webpack-dashboard/dashboard/</a> &#187; index.js</div>
+    <div class="path"><a href="../../../../index.html">All files</a> » <a href="index.html">node-npmtest-webpack-dashboard/node_modules/webpack-dashboard/dashboard/</a> » index.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tr><td class="line-count">1
+<tbody><tr><td class="line-count">1
 2
 3
 4
@@ -863,14 +861,14 @@ var formatOutput = require("../utils/format-output.js");
 var formatModules = require("../utils/format-modules.js");
 var formatAssets = require("../utils/format-assets.js");
 &nbsp;
-<span class="fstat-no" title="function not covered" >function Dashboard(options) {</span>
-<span class="cstat-no" title="statement not covered" >  var title = options &amp;&amp; options.title || "webpack-dashboard";</span>
+<span class="fstat-no" title="function not covered">function Dashboard(options) {</span>
+<span class="cstat-no" title="statement not covered">  var title = options &amp;&amp; options.title || "webpack-dashboard";</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  this.color = options &amp;&amp; options.color || "green";</span>
-<span class="cstat-no" title="statement not covered" >  this.minimal = options &amp;&amp; options.minimal || false;</span>
-<span class="cstat-no" title="statement not covered" >  this.setData = this.setData.bind(this);</span>
+<span class="cstat-no" title="statement not covered">  this.color = options &amp;&amp; options.color || "green";</span>
+<span class="cstat-no" title="statement not covered">  this.minimal = options &amp;&amp; options.minimal || false;</span>
+<span class="cstat-no" title="statement not covered">  this.setData = this.setData.bind(this);</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  this.screen = blessed.screen({</span>
+<span class="cstat-no" title="statement not covered">  this.screen = blessed.screen({</span>
     smartCSR: true,
     title: title,
     dockBorders: false,
@@ -878,90 +876,90 @@ var formatAssets = require("../utils/format-assets.js");
     autoPadding: true
   });
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  this.layoutLog.call(this);</span>
-<span class="cstat-no" title="statement not covered" >  this.layoutStatus.call(this);</span>
-<span class="cstat-no" title="statement not covered" >  !this.minimal &amp;&amp; this.layoutModules.call(this);</span>
-<span class="cstat-no" title="statement not covered" >  !this.minimal &amp;&amp; this.layoutAssets.call(this);</span>
+<span class="cstat-no" title="statement not covered">  this.layoutLog.call(this);</span>
+<span class="cstat-no" title="statement not covered">  this.layoutStatus.call(this);</span>
+<span class="cstat-no" title="statement not covered">  !this.minimal &amp;&amp; this.layoutModules.call(this);</span>
+<span class="cstat-no" title="statement not covered">  !this.minimal &amp;&amp; this.layoutAssets.call(this);</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  this.screen.key(["escape", "q", "C-c"], <span class="fstat-no" title="function not covered" >function() {</span></span>
-<span class="cstat-no" title="statement not covered" >    process.exit(0);</span>
+<span class="cstat-no" title="statement not covered">  this.screen.key(["escape", "q", "C-c"], <span class="fstat-no" title="function not covered">function() {</span></span>
+<span class="cstat-no" title="statement not covered">    process.exit(0);</span>
   });
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  this.screen.render();</span>
+<span class="cstat-no" title="statement not covered">  this.screen.render();</span>
 }
 &nbsp;
-Dashboard.prototype.setData = <span class="fstat-no" title="function not covered" >function(dataArr) {</span>
-<span class="cstat-no" title="statement not covered" >  var self = this;</span>
+Dashboard.prototype.setData = <span class="fstat-no" title="function not covered">function(dataArr) {</span>
+<span class="cstat-no" title="statement not covered">  var self = this;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  dataArr.forEach(<span class="fstat-no" title="function not covered" >function(data) {</span></span>
-<span class="cstat-no" title="statement not covered" >    switch (data.type) {</span>
+<span class="cstat-no" title="statement not covered">  dataArr.forEach(<span class="fstat-no" title="function not covered">function(data) {</span></span>
+<span class="cstat-no" title="statement not covered">    switch (data.type) {</span>
       case "progress": {
-<span class="cstat-no" title="statement not covered" >        var percent = parseInt(data.value * 100);</span>
-<span class="cstat-no" title="statement not covered" >        if (self.minimal) {</span>
-<span class="cstat-no" title="statement not covered" >          percent &amp;&amp; self.progress.setContent(percent.toString() + "%");</span>
+<span class="cstat-no" title="statement not covered">        var percent = parseInt(data.value * 100);</span>
+<span class="cstat-no" title="statement not covered">        if (self.minimal) {</span>
+<span class="cstat-no" title="statement not covered">          percent &amp;&amp; self.progress.setContent(percent.toString() + "%");</span>
         } else {
-<span class="cstat-no" title="statement not covered" >          percent &amp;&amp; self.progressbar.setContent(percent.toString() + "%");</span>
-<span class="cstat-no" title="statement not covered" >          self.progressbar.setProgress(percent);</span>
+<span class="cstat-no" title="statement not covered">          percent &amp;&amp; self.progressbar.setContent(percent.toString() + "%");</span>
+<span class="cstat-no" title="statement not covered">          self.progressbar.setProgress(percent);</span>
         }
-<span class="cstat-no" title="statement not covered" >        break;</span>
+<span class="cstat-no" title="statement not covered">        break;</span>
       }
       case "operations": {
-<span class="cstat-no" title="statement not covered" >        self.operations.setContent(data.value);</span>
-<span class="cstat-no" title="statement not covered" >        break;</span>
+<span class="cstat-no" title="statement not covered">        self.operations.setContent(data.value);</span>
+<span class="cstat-no" title="statement not covered">        break;</span>
       }
       case "status": {
-<span class="cstat-no" title="statement not covered" >        var content;</span>
+<span class="cstat-no" title="statement not covered">        var content;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        switch(data.value) {</span>
+<span class="cstat-no" title="statement not covered">        switch(data.value) {</span>
           case "Success":
-<span class="cstat-no" title="statement not covered" >            content = "{green-fg}{bold}" + data.value + "{/}";</span>
-<span class="cstat-no" title="statement not covered" >            break;</span>
+<span class="cstat-no" title="statement not covered">            content = "{green-fg}{bold}" + data.value + "{/}";</span>
+<span class="cstat-no" title="statement not covered">            break;</span>
           case "Failed":
-<span class="cstat-no" title="statement not covered" >            content = "{red-fg}{bold}" + data.value + "{/}";</span>
-<span class="cstat-no" title="statement not covered" >            break;</span>
+<span class="cstat-no" title="statement not covered">            content = "{red-fg}{bold}" + data.value + "{/}";</span>
+<span class="cstat-no" title="statement not covered">            break;</span>
           default:
-<span class="cstat-no" title="statement not covered" >            content = "{bold}" + data.value + "{/}";</span>
+<span class="cstat-no" title="statement not covered">            content = "{bold}" + data.value + "{/}";</span>
         }
-<span class="cstat-no" title="statement not covered" >        self.status.setContent(content);</span>
-<span class="cstat-no" title="statement not covered" >        break;</span>
+<span class="cstat-no" title="statement not covered">        self.status.setContent(content);</span>
+<span class="cstat-no" title="statement not covered">        break;</span>
       }
       case "stats": {
-<span class="cstat-no" title="statement not covered" >        var stats = {</span>
-          hasErrors: <span class="fstat-no" title="function not covered" >function() {</span>
-<span class="cstat-no" title="statement not covered" >            return data.value.errors;</span>
+<span class="cstat-no" title="statement not covered">        var stats = {</span>
+          hasErrors: <span class="fstat-no" title="function not covered">function() {</span>
+<span class="cstat-no" title="statement not covered">            return data.value.errors;</span>
           },
-          hasWarnings: <span class="fstat-no" title="function not covered" >function() {</span>
-<span class="cstat-no" title="statement not covered" >            return data.value.warnings;</span>
+          hasWarnings: <span class="fstat-no" title="function not covered">function() {</span>
+<span class="cstat-no" title="statement not covered">            return data.value.warnings;</span>
           },
-          toJson: <span class="fstat-no" title="function not covered" >function() {</span>
-<span class="cstat-no" title="statement not covered" >            return data.value.data;</span>
+          toJson: <span class="fstat-no" title="function not covered">function() {</span>
+<span class="cstat-no" title="statement not covered">            return data.value.data;</span>
           }
         };
-<span class="cstat-no" title="statement not covered" >        if (stats.hasErrors()) {</span>
-<span class="cstat-no" title="statement not covered" >          self.status.setContent("{red-fg}{bold}Failed{/}");</span>
+<span class="cstat-no" title="statement not covered">        if (stats.hasErrors()) {</span>
+<span class="cstat-no" title="statement not covered">          self.status.setContent("{red-fg}{bold}Failed{/}");</span>
         }
-<span class="cstat-no" title="statement not covered" >        self.logText.log(formatOutput(stats));</span>
-<span class="cstat-no" title="statement not covered" >        !self.minimal &amp;&amp; self.moduleTable.setData(formatModules(stats));</span>
-<span class="cstat-no" title="statement not covered" >        !self.minimal &amp;&amp; self.assetTable.setData(formatAssets(stats));</span>
-<span class="cstat-no" title="statement not covered" >        break;</span>
+<span class="cstat-no" title="statement not covered">        self.logText.log(formatOutput(stats));</span>
+<span class="cstat-no" title="statement not covered">        !self.minimal &amp;&amp; self.moduleTable.setData(formatModules(stats));</span>
+<span class="cstat-no" title="statement not covered">        !self.minimal &amp;&amp; self.assetTable.setData(formatAssets(stats));</span>
+<span class="cstat-no" title="statement not covered">        break;</span>
       }
       case "log": {
-<span class="cstat-no" title="statement not covered" >        var filteredValue = data.value.replace(/[{}]/g, "");</span>
-<span class="cstat-no" title="statement not covered" >        self.logText.log(filteredValue);</span>
-<span class="cstat-no" title="statement not covered" >        break;</span>
+<span class="cstat-no" title="statement not covered">        var filteredValue = data.value.replace(/[{}]/g, "");</span>
+<span class="cstat-no" title="statement not covered">        self.logText.log(filteredValue);</span>
+<span class="cstat-no" title="statement not covered">        break;</span>
       }
       case "clear": {
-<span class="cstat-no" title="statement not covered" >        self.logText.setContent("");</span>
-<span class="cstat-no" title="statement not covered" >        break;</span>
+<span class="cstat-no" title="statement not covered">        self.logText.setContent("");</span>
+<span class="cstat-no" title="statement not covered">        break;</span>
       }
     }
   });
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  this.screen.render();</span>
+<span class="cstat-no" title="statement not covered">  this.screen.render();</span>
 };
 &nbsp;
-Dashboard.prototype.layoutLog = <span class="fstat-no" title="function not covered" >function() {</span>
-<span class="cstat-no" title="statement not covered" >  this.log = blessed.box({</span>
+Dashboard.prototype.layoutLog = <span class="fstat-no" title="function not covered">function() {</span>
+<span class="cstat-no" title="statement not covered">  this.log = blessed.box({</span>
     label: "Log",
     padding: 1,
     width: this.minimal ? "100%" : "75%",
@@ -979,7 +977,7 @@ Dashboard.prototype.layoutLog = <span class="fstat-no" title="function not cover
     },
   });
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  this.logText = blessed.log({</span>
+<span class="cstat-no" title="statement not covered">  this.logText = blessed.log({</span>
     parent: this.log,
     tags: true,
     width: "100%-5",
@@ -995,11 +993,11 @@ Dashboard.prototype.layoutLog = <span class="fstat-no" title="function not cover
     mouse: true
   });
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  this.screen.append(this.log);</span>
+<span class="cstat-no" title="statement not covered">  this.screen.append(this.log);</span>
 };
 &nbsp;
-Dashboard.prototype.layoutModules = <span class="fstat-no" title="function not covered" >function() {</span>
-<span class="cstat-no" title="statement not covered" >  this.modules = blessed.box({</span>
+Dashboard.prototype.layoutModules = <span class="fstat-no" title="function not covered">function() {</span>
+<span class="cstat-no" title="statement not covered">  this.modules = blessed.box({</span>
     label: "Modules",
     tags: true,
     padding: 1,
@@ -1018,7 +1016,7 @@ Dashboard.prototype.layoutModules = <span class="fstat-no" title="function not c
     },
   });
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  this.moduleTable = blessed.table({</span>
+<span class="cstat-no" title="statement not covered">  this.moduleTable = blessed.table({</span>
     parent: this.modules,
     height: "100%",
     width: "100%-5",
@@ -1037,11 +1035,11 @@ Dashboard.prototype.layoutModules = <span class="fstat-no" title="function not c
     data: [["Name", "Size", "Percentage"]]
   });
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  this.screen.append(this.modules);</span>
+<span class="cstat-no" title="statement not covered">  this.screen.append(this.modules);</span>
 };
 &nbsp;
-Dashboard.prototype.layoutAssets = <span class="fstat-no" title="function not covered" >function() {</span>
-<span class="cstat-no" title="statement not covered" >  this.assets = blessed.box({</span>
+Dashboard.prototype.layoutAssets = <span class="fstat-no" title="function not covered">function() {</span>
+<span class="cstat-no" title="statement not covered">  this.assets = blessed.box({</span>
     label: "Assets",
     tags: true,
     padding: 1,
@@ -1060,7 +1058,7 @@ Dashboard.prototype.layoutAssets = <span class="fstat-no" title="function not co
     },
   });
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  this.assetTable = blessed.table({</span>
+<span class="cstat-no" title="statement not covered">  this.assetTable = blessed.table({</span>
     parent: this.assets,
     height: "100%",
     width: "100%-5",
@@ -1078,12 +1076,12 @@ Dashboard.prototype.layoutAssets = <span class="fstat-no" title="function not co
     data: [["Name", "Size"]]
   });
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  this.screen.append(this.assets);</span>
+<span class="cstat-no" title="statement not covered">  this.screen.append(this.assets);</span>
 };
 &nbsp;
-Dashboard.prototype.layoutStatus = <span class="fstat-no" title="function not covered" >function() {</span>
+Dashboard.prototype.layoutStatus = <span class="fstat-no" title="function not covered">function() {</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  this.wrapper = blessed.layout({</span>
+<span class="cstat-no" title="statement not covered">  this.wrapper = blessed.layout({</span>
     width: this.minimal ? "100%" : "25%",
     height: this.minimal ? "30%" : "42%",
     top: this.minimal ? "70%" : "0%",
@@ -1091,7 +1089,7 @@ Dashboard.prototype.layoutStatus = <span class="fstat-no" title="function not co
     layout: "grid"
   });
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  this.status = blessed.box({</span>
+<span class="cstat-no" title="statement not covered">  this.status = blessed.box({</span>
     parent: this.wrapper,
     label: "Status",
     tags: true,
@@ -1112,7 +1110,7 @@ Dashboard.prototype.layoutStatus = <span class="fstat-no" title="function not co
     },
   });
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  this.operations = blessed.box({</span>
+<span class="cstat-no" title="statement not covered">  this.operations = blessed.box({</span>
     parent: this.wrapper,
     label: "Operation",
     tags: true,
@@ -1133,7 +1131,7 @@ Dashboard.prototype.layoutStatus = <span class="fstat-no" title="function not co
     },
   });
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  this.progress = blessed.box({</span>
+<span class="cstat-no" title="statement not covered">  this.progress = blessed.box({</span>
     parent: this.wrapper,
     label: "Progress",
     tags: true,
@@ -1154,7 +1152,7 @@ Dashboard.prototype.layoutStatus = <span class="fstat-no" title="function not co
     },
   });
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  this.progressbar = blessed.ProgressBar({</span>
+<span class="cstat-no" title="statement not covered">  this.progressbar = blessed.ProgressBar({</span>
     parent: this.progress,
     height: 1,
     width: "90%",
@@ -1169,16 +1167,17 @@ Dashboard.prototype.layoutStatus = <span class="fstat-no" title="function not co
     }
   });
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  this.screen.append(this.wrapper);</span>
+<span class="cstat-no" title="statement not covered">  this.screen.append(this.wrapper);</span>
 };
 &nbsp;
 module.exports = Dashboard;
 &nbsp;
 &nbsp;</pre></td></tr>
-</table></pre>
+</tbody></table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 21:18:03 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Mon Apr 17 2017 15:07:56 GMT+0000 (UTC)</div>
 </div>
-</body>
-</html>
+
+
+</body></html>
